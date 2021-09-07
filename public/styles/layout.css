@@ -15,12 +15,26 @@ html {
  */
 
 body {
-  color: #545149;
-  background-color: #f4f1ec;
+  color: #204d36;
+  background-color: #e4f5e7;
   font-family: "Source Sans Pro", "sans-serif";
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
- 
+main {
+  width: 100vw;
+	max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container {
+  width: 100vw;
+	max-width: 90%;
+}
+
+ /* 90% of the width of its parent element
+center aligned to the body
+the same background colour as the <body> element */

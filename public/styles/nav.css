@@ -2,7 +2,7 @@ nav {
   height: 120px;
 	width: 100vw;
 	max-width: 100%;
-  background-color: #4056A1;
+  background-color: #204d36;
   padding-left: 1.5em;
   padding-right: 1.5em;
   display: flex;
@@ -14,7 +14,7 @@ nav {
 .navText {
   font-family: "bungee";
   font-size: 36px;
-  color: white;
+  color: #f97f58;
   font-weight: 700;
 }
 
@@ -28,13 +28,13 @@ nav {
 .nav-med-display {
   line-height: 60px;
   height: 60px;
-  font-size: 18px;
-  color: white;
+  font-size: 21px;
+  color: #f97f58;
   font-weight: 600;
 }
 
 .btn__icon {
-  font-size: 1em;
-  color: turquoise;
+  font-size: 1.25em;
+  color: #e4f5e7;
 }
 
