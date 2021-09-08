@@ -23,17 +23,14 @@ body {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
-main {
+.mainContainer {
   width: 100vw;
-	max-width: 100%;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  flex-direction:column;
   align-items: center;
 }
-.container {
-  width: 100vw;
-	max-width: 90%;
-}
+
 
  /* 90% of the width of its parent element
 center aligned to the body

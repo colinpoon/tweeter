@@ -9,6 +9,10 @@ nav {
   justify-content: space-between;
   align-items: center;
   z-index: 10;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin-bottom: 2em;
 }
 
 .navText {
