@@ -10,3 +10,11 @@ header {
   background-color: #fef7f4;
   background-image: url("https://www.transparenttextures.com/patterns/green-gobbler.png");
 }
+
+.userDisplay {
+  margin-top: 0;
+  font-family: "bungee";
+  font-size: 24px;
+  font-weight: 500;
+  font-variant-ligatures: historical-ligatures;
+}
