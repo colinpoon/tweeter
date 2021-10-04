@@ -40,5 +40,9 @@ nav {
 .btn__icon {
   font-size: 1.25em;
   color: #e4f5e7;
+  transition: 2s;
 }
 
+.btn__icon:hover {
+  height: 150px;
+}
