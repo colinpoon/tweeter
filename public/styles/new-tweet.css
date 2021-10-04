@@ -16,7 +16,7 @@ textarea {
   box-sizing: border-box;
     display: block;
     width: 100%;
-    border: 3px solid currentColor;
+    border: 3px dotted currentColor;
     padding: 0.75em;
     margin-top: 0.5em;
     color: currentColor;
@@ -52,9 +52,9 @@ button {
 }
 
 output {
-  font-size: 21px;
-  font-family: "Source Sans Pro", "sans-serif";
-  font-weight: 800;
+  font-size: 18px;
+  font-family: "bungee", "Source Sans Pro", "sans-serif";
+  font-weight: 700;
   color: #f97f58;
 }
 
