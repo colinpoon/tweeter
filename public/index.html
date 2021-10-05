@@ -38,11 +38,13 @@
     <nav>
       <span class="navText">tweeter</span>
       <div class="nav-med-vertical">
-          <span class="nav-med-display"><b>Write</b> a new tweet</span>
-          <i class="btn__icon fas fa-angle-double-down"></i>
+        <span class="nav-med-display"><b>Write</b> a new tweet</span>
+        <i class="btn__icon fas fa-angle-double-down"></i>
       </div>
     </nav>
-    <header>
+    <div class="main-container">
+    <main class="content">
+    <header class="profile">
       <div>
           <img src="/images/profilePicture.png"> 
       </div>
@@ -53,8 +55,6 @@
   </header>
 
     <!-- Page-specific (main) content here -->
-    <div class="main-container">
-    <main class="content">
       <section class="new-tweet">
         <form method="POST" action="/tweets/">
           <label for="tweet-text">What's on your mind?</label>
@@ -68,19 +68,26 @@
 
       <section>
         <article class="tweets">
-          <header>
+          <header class="tweet-header">
+            <i class="fas fa-smile-wink"></i>
+            <h2> Name Here</h2>
           </header>
           <form method="GET">
-          <div>
-            
+          <div style="border-bottom: 3px;">
+            <h2 style="border-bottom: 3px;"> hello world</h2>
           </div>
         </form>
           <footer>
+            <div>
+              <p> 10 days ago</p>
+            </div>
+            <div> 
             <i class="fas fa-flag"></i>
             <i class="far fa-flag"></i>
             <i class="fas fa-retweet"></i>
             <i class="fas fa-heart"></i>
             <i class="far fa-heart"></i>
+          </div>
 
           </footer>
         </article>
