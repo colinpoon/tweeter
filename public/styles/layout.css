@@ -73,19 +73,25 @@ body {
   flex-direction: row;
   align-items: center;
 }
+.tweeter-profile img {
+  opacity: 50%;
+}
+.tweeter-profile img:hover {
+  opacity: 100%;
+}
 
 .tweeter-profile h2 {
   font-size: 24px;
   font-family: "Source Sans Pro", "sans-serif";
-  font-weight: 500;
-  margin-left: 1em;
+  font-weight: 700;
+  margin-left: 0.5em;
 }
 
 .userhandle h2 {
   font-size: 24px;
   font-family: "Source Sans Pro", "sans-serif";
   font-weight: 700;
-  margin-left: 1em;
+  margin-left: 0.5em;
   opacity: 30%;
 }
 
