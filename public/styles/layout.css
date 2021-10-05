@@ -47,15 +47,13 @@ body {
   background-image: url("https://www.transparenttextures.com/patterns/clean-textile.png");
   padding: 35px;
   margin-bottom: 50px;
-  margin-top: calc(4 * var(--size-bezel));
+  margin-top: calc(4 * var(--size-bezel)); /* add some comment about var */
   border-radius: var(--size-radius);
   border: 3px solid var(--color-shadow, currentColor);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  
 }
 .tweets:hover{
   box-shadow: 0.75rem 0.75rem 0 var(--color-shadow, currentColor);
