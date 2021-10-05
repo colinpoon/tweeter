@@ -40,9 +40,11 @@ nav {
 .btn__icon {
   font-size: 1.25em;
   color: #e4f5e7;
-  transition: 2s;
+  animation: bounce 1.5s infinite;
 }
 
-.btn__icon:hover {
-  height: 150px;
+@keyframes bounce {
+  0%,  
+  100% {-webkit-transform: translateY(0);} 
+  50% {-webkit-transform: translateY(-10px);}
 }
