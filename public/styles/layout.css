@@ -13,13 +13,13 @@ html {
 /*
  * Global layout stuff
  */
-
 body {
   color: #204d36;
-  background-color: #e4f5e7;
+  background-color: transparent;
   font-family: "Source Sans Pro", "sans-serif";
+  background-color: #fef7f4;
+  background-image: url("https://www.transparenttextures.com/patterns/green-gobbler.png");
 }
-
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
@@ -44,7 +44,6 @@ body {
   width: 100vw;
   max-width: 90%;
   background-color: white;
-  background-image: url("https://www.transparenttextures.com/patterns/clean-textile.png");
   padding: 35px;
   margin-bottom: 50px;
   margin-top: calc(4 * var(--size-bezel)); 
@@ -106,6 +105,8 @@ body {
   width: 100%;
   padding: 0.75em;
   margin-top: 0.5em;
+}
+.tweet-post-content h2 {
   font-size: 21px;
   font-family: "Source Sans Pro", "sans-serif";
   font-weight: 700;
