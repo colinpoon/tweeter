@@ -39,7 +39,7 @@ body {
   align-items: center;
   justify-content: center;
 }
-
+/* attempted to implment the syntax var to see how it can be used */
 .tweets {
   width: 100vw;
   max-width: 90%;
@@ -47,7 +47,7 @@ body {
   background-image: url("https://www.transparenttextures.com/patterns/clean-textile.png");
   padding: 35px;
   margin-bottom: 50px;
-  margin-top: calc(4 * var(--size-bezel)); /* add some comment about var */
+  margin-top: calc(4 * var(--size-bezel)); 
   border-radius: var(--size-radius);
   border: 3px solid var(--color-shadow, currentColor);
   display: flex;
