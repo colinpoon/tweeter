@@ -50,7 +50,7 @@ body {
   padding: 35px;
   margin-bottom: 50px;
   margin-top: calc(4 * var(--size-bezel)); 
-  border-radius: var(--size-radius);
+  border-radius: var(--size-radius,);
   border: 8px solid var(--color-shadow, currentColor);
   display: flex;
   flex-direction:column;
@@ -58,7 +58,7 @@ body {
   justify-content: center;
 }
 .tweets:hover{
-  box-shadow: 0.75rem 0.75rem 0 var(--color-shadow, currentColor);
+  box-shadow: 0.75rem 0.75rem 0 var(--color-shadow, #f97f58);
   --size-bezel: left: 0.5em; right: 0.5em;
 }
 

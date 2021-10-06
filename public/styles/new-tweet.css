@@ -46,6 +46,10 @@ button {
   font-weight: 400;
   color: #f97f58;
 }
+button:hover {
+  box-shadow: 0.35rem 0.35rem 0 var(--color-shadow, #f97f58);
+  --size-bezel: left: 0.5em; right: 0.5em;
+}
 
 output {
   font-size: 18px;
