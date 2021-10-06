@@ -13,11 +13,22 @@
   {
     "user": {
       "name": "Descartes",
-      "avatars": "https://i.imgur.com/nlhLi3I.png",
+      "avatars": "https://github.com/colinpoon/tweeter/blob/master/public/images/tweeter1.png?raw=true",
       "handle": "@rd"
     },
     "content": {
       "text": "Je pense , donc je suis"
+    },
+    "created_at": 1633397952354
+  },
+  {
+    "user": {
+      "name": "Specter",
+      "avatars": "https://github.com/colinpoon/tweeter/blob/master/public/images/tweeter4.png?raw=true",
+      "handle": "@rd"
+    },
+    "content": {
+      "text": "The only time success comes before work is in the dictionary."
     },
     "created_at": 1633397952354
   }
