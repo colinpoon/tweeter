@@ -139,5 +139,29 @@ body {
 }
 
 #error {
+  background-color: #204d36;
+  height:fit-content;
+  padding: 5px;
+  margin-bottom: 35px;
+  margin-top: calc(4 * var(--size-bezel)); 
+  border-radius: 5px; 
   display: none;
+}
+
+#error:hover{
+  box-shadow: 0.75rem 0.75rem 0 var(--color-shadow, #f97f58);
+  --size-bezel: left: 0.5em; right: 0.5em;
+}
+
+#error p {
+display: flex;
+flex-direction:row;
+align-items: center;
+justify-content: space-evenly;
+font-family: "Calistoga";
+font-size: 24px;
+color: #f97f58;
+border: 3px solid var(--color-shadow, #f97f58);
+padding: 1rem;
+margin: 0.5rem;
 }

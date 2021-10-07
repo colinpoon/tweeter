@@ -1,8 +1,10 @@
+//XSS
 const escape = function (str) {
   let div = document.createElement("div");
   div.appendChild(document.createTextNode(str));
   return div.innerHTML;
 };
+
 
 $(document).ready(function () {
   const createTweetElement = function (tweet) {
@@ -46,18 +48,16 @@ $(document).ready(function () {
 
   $("#tweet-form").submit(function (event) {
     event.preventDefault();
-    console.log(event);
     const $text = $('#tweet-text');
     const $count = $text.val().length;
     const $error = $('#error');
 
     if ($count === 0 || $count === null) {
-      return $error.slideDown();
+      return $error.slideDown('swing');
       // return alert("You're not saying anything");
     }
     if ($count > 140) {
-      return $error.slideDown(); 
-      // return $("You talk too much!").slideDown(); 
+      return $error.slideDown('swing');
     }
 
     const tweetData = $("#tweet-text").serialize();
@@ -71,9 +71,8 @@ $(document).ready(function () {
       })
       .then(function (data) {
         $text.val('');
-        $error.slideUp();
+        $error.slideUp('swing');
       })
-
   });
 
   const loadTweets = function () {
@@ -90,8 +89,4 @@ $(document).ready(function () {
       })
   };
   loadTweets();
-
-  // style css for errors
-  // display errors instead of alerts*
-
 });
