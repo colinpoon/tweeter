@@ -86,47 +86,30 @@ $(document).ready(function () {
       url: "/tweets/",
       data: tweetData,
     })
-    .then(function(data){
-     loadTweets();
-    })
+      .then(function (data) {
+        loadTweets();
+      })
   });
 
   const loadTweets = function () {
     const $tweetData = $('#tweets-container');
     const $tweetText = $('#tweet-text');
-    $.ajax({ 
+    $.ajax({
       url: '/tweets/',
       method: 'GET',
       dataType: "JSON",
     })
-    .then(function(data){
-      $tweetData.empty();
-      renderTweets(data) 
-    })
+      .then(function (data) {
+        $tweetData.empty();
+        renderTweets(data)
+      })
   };
   loadTweets();
+
+  /// add an event for $('.nav-med-vertical') "new tweet"**
+  // on.("click", function(event)... --> 'focus' -----> $('#tweet-text') 
+  
+  // style css for errors
+  // display errors instead of alerts*
+
 });
-
-// $("#tweet-form").submit(function (event) {
-//   // $("#tweet-form").on("submit", function(event) {
-//     event.preventDefault();
-//     const text = $("tweet-text").val();
-//     console.log(text);
-//     // if (count === 0) {
-//     //   return alert('Nothing to tweet!');
-//     // }
-//     // if (count > 140){
-//     //   return alert('You talk too much!');
-//     // }
-//     const tweetData = $("#tweet-text").serialize();
-//     $.ajax({
-//       type: "POST",
-//       url: "/tweets/",
-//       data: tweetData,
-//     })
-//     .then(function(data){
-//      loadTweets();
-//     })
-  // });
-
-
