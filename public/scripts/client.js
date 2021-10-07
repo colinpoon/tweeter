@@ -4,7 +4,6 @@ const escape = function (str) {
   return div.innerHTML;
 };
 
-
 $(document).ready(function () {
   const createTweetElement = function (tweet) {
     const safeHTML = escape(tweet.content.text);
@@ -47,15 +46,20 @@ $(document).ready(function () {
 
   $("#tweet-form").submit(function (event) {
     event.preventDefault();
-
+    console.log(event);
     const $text = $('#tweet-text');
     const $count = $text.val().length;
+    const $error = $('#error');
+
     if ($count === 0 || $count === null) {
-      return alert("You're not saying anything");
+      return $error.slideDown();
+      // return alert("You're not saying anything");
     }
     if ($count > 140) {
-      return alert("You talk too much!");
+      return $error.slideDown(); 
+      // return $("You talk too much!").slideDown(); 
     }
+
     const tweetData = $("#tweet-text").serialize();
     $.ajax({
       type: "POST",
@@ -67,6 +71,7 @@ $(document).ready(function () {
       })
       .then(function (data) {
         $text.val('');
+        $error.slideUp();
       })
 
   });

@@ -137,3 +137,7 @@ body {
 .tweets footer i:hover {
   color: #f97f58;
 }
+
+#error {
+  display: none;
+}
