@@ -16,10 +16,11 @@ nav {
 }
 
 .navText {
-  font-family: "bungee";
-  font-size: 36px;
+  font-family: "Calistoga";
+  font-size: 48px;
   color: #f97f58;
-  font-weight: 700;
+  /* font-weight: 700;
+  letter-spacing: 5px; */
 }
 
 .nav-med-vertical {

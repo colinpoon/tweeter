@@ -1,32 +1,13 @@
-// // TEST 
-// const tweetData = [
-//   {
-//     "user": {
-//       "name": "Newton",
-//       "avatars": "https://i.imgur.com/73hZDYK.png",
-//       "handle": "@SirIsaac"
-//     },
-//     "content": {
-//       "text": "If I have seen further it is by standing on the shoulders of giants"
-//     },
-//     "created_at": 1633374227419
-//   },
-//   {
-//     "user": {
-//       "name": "Descartes",
-//       "avatars": "https://github.com/colinpoon/tweeter/blob/master/public/images/tweeter1.png?raw=true",
-//       "handle": "@rd"
-//     },
-//     "content": {
-//       "text": "Je pense , donc je suis"
-//     },
-//     "created_at": 1633374227419
-//   }
-// ];
+const escape = function (str) {
+  let div = document.createElement("div");
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+};
 
 
 $(document).ready(function () {
   const createTweetElement = function (tweet) {
+    const safeHTML = escape(tweet.content.text);
     let $tweet = `
   <article class="tweets">
     <header class="tweet-header">
@@ -40,7 +21,7 @@ $(document).ready(function () {
     </header>
       <form></form>
       <div class="tweet-post-content">
-        <h2>${tweet.content.text}</h2>
+        <h2>${safeHTML}</h2>
       </div>
       </form>
       <footer>
@@ -59,27 +40,22 @@ $(document).ready(function () {
 
   const renderTweets = function (tweets) {
     tweets.forEach(element => {
-      // calls createTweetElement for each tweet
       const tweet = createTweetElement(element);
-      // takes return value and appends it to the tweets container 
       $('#tweets-container').prepend(tweet);
     });
   };
-  // $('#tweet-form).on('submit', function(event){ --------> nothing seems to work?
+
   $("#tweet-form").submit(function (event) {
     event.preventDefault();
-    //const text = $('#tweet-form);
-    // console.log(text);
-    //const text = $('#tweet-text);
-    // console.log(text);
-    //const count = text.length;
-    // console.log(count);
-    // if (count === 0){
-    //   return alert("You're not saying anything");
-    // }
-    // if (count > 0){
-    //   return alert("You talk too much!");
-    // }
+
+    const $text = $('#tweet-text');
+    const $count = $text.val().length;
+    if ($count === 0 || $count === null) {
+      return alert("You're not saying anything");
+    }
+    if ($count > 140) {
+      return alert("You talk too much!");
+    }
     const tweetData = $("#tweet-text").serialize();
     $.ajax({
       type: "POST",
@@ -89,6 +65,10 @@ $(document).ready(function () {
       .then(function (data) {
         loadTweets();
       })
+      .then(function (data) {
+        $text.val('');
+      })
+
   });
 
   const loadTweets = function () {
@@ -106,9 +86,6 @@ $(document).ready(function () {
   };
   loadTweets();
 
-  /// add an event for $('.nav-med-vertical') "new tweet"**
-  // on.("click", function(event)... --> 'focus' -----> $('#tweet-text') 
-  
   // style css for errors
   // display errors instead of alerts*
 
