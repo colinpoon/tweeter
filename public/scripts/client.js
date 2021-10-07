@@ -65,9 +65,21 @@ $(document).ready(function () {
       $('#tweets-container').prepend(tweet);
     });
   };
-
+  // $('#tweet-form).on('submit', function(event){ --------> nothing seems to work?
   $("#tweet-form").submit(function (event) {
     event.preventDefault();
+    //const text = $('#tweet-form);
+    // console.log(text);
+    //const text = $('#tweet-text);
+    // console.log(text);
+    //const count = text.length;
+    // console.log(count);
+    // if (count === 0){
+    //   return alert("You're not saying anything");
+    // }
+    // if (count > 0){
+    //   return alert("You talk too much!");
+    // }
     const tweetData = $("#tweet-text").serialize();
     $.ajax({
       type: "POST",

@@ -17,7 +17,7 @@ textarea {
     color: currentColor;
     background: transparent;
     border-radius: var(--size-radius);
-    font-size: 21px;
+    font-size: 24px;
     font-family: "Source Sans Pro", "sans-serif";
     font-weight: 700;
     resize: none;
