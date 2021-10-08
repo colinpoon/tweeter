@@ -91,7 +91,6 @@ $(document).ready(function () {
   loadTweets();
 
   /// SCROLL TO TOP
-  //GET REVIEWED
   $(function () {
     $(window).scroll(function () {
       if ($(this).scrollTop() - 200 > 0) {
@@ -99,14 +98,14 @@ $(document).ready(function () {
       } else {
         $('#to-top').stop().slideUp('fast');
       }
-      $("#to-top").on("click", function () {
-        $("html, body").animate({
-          scrollTop: 0
-        }, 200);
-      });
     });
   });
-  
+  $("#to-top").on("click", function () {
+    $("html, body").animate({
+      scrollTop: 0
+    }, 200);
+  });
+
 ///DOCUMENT READY
 });
 
