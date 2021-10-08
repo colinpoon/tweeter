@@ -166,7 +166,31 @@ padding: 1rem;
 margin: 0.5rem;
 }
 
+#to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  cursor: pointer;
+  padding: 10px 15px;
+  background: #00bfff;
+  font-weight: bold;
+  color: #ffffff;
+  size: 20px;
+  display: none;
+}
+
 @media only screen and (min-width: 768px) {
 }
+
+
+
 @media only screen and (min-width: 1024px) {
+  .content {
+    width: 100%;
+    margin-top: 120px;;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 }
