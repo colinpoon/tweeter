@@ -176,7 +176,7 @@ margin: 0.5rem;
   margin-bottom: 30px;
   display: none;
 }
-
+/* 
 @media only screen and (max-width: 1024px) {
   #tweets-container {
     width: 100vw;
@@ -198,4 +198,4 @@ margin: 0.5rem;
     justify-content: space-between;
     align-items: flex-start;
   }
-}
+} */

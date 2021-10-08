@@ -58,8 +58,8 @@ output {
   color: #204d36;
 }
 
-/* (https://codepen.io/meodai/pen/rNedxBa) */
-@media only screen and (max-width: 1024px) {
+
+/* @media only screen and (max-width: 1024px) {
 .new-tweet {
     width: 90%;
     padding: 25px;
@@ -81,4 +81,6 @@ output {
   }
 }
 @media only screen and (min-width: 1024px) {
-}
+} */
+
+/* (https://codepen.io/meodai/pen/rNedxBa) */
