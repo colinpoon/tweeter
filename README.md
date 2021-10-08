@@ -9,6 +9,7 @@ This repository is the starter code for the project: Students will fork and clon
 ## Responsive Design
 
 ## Desktop
+## Tablet & Mobile  
 
 !["Landing"](https://github.com/colinpoon/tweeter/blob/master/public/images/README-IMGS/Screen%20Shot%202021-10-08%20at%204.01.40%20PM.png?raw=true)  
 ##
