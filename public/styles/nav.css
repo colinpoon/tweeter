@@ -1,3 +1,4 @@
+
 nav {
   height: 120px;
 	width: 100vw;
@@ -16,7 +17,7 @@ nav {
 }
 
 .navText {
-  font-family: "Calistoga";
+  font-family: "bungee";
   font-size: 48px;
   color: #f97f58;
   /* font-weight: 700;
@@ -31,56 +32,7 @@ nav {
 }
 
 .nav-med-display {
-  line-height: 60px;
-  height: 60px;
-  font-size: 21px;
-  color: #f97f58;
-  font-weight: 600;
-}
-
-.btn__icon {
-  font-size: 1.25em;
-  color: #e4f5e7;
-  animation: bounce 1.5s infinite;
-}
-
-@keyframes bounce {
-  0%,  
-  100% {-webkit-transform: translateY(0);} 
-  50% {-webkit-transform: translateY(-10px);}
-}nav {
-  height: 120px;
-	width: 100vw;
-	max-width: 100%;
-  background-color: #204d36;
-  padding-left: 1.75em;
-  padding-right: 1.75em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  margin-bottom: 2em;
-}
-
-.navText {
-  font-family: "Calistoga";
-  font-size: 48px;
-  color: #f97f58;
-  /* font-weight: 700;
-  letter-spacing: 5px; */
-}
-
-.nav-med-vertical {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  
-}
-
-.nav-med-display {
+  font-family: "bungee";
   line-height: 60px;
   height: 60px;
   font-size: 21px;
@@ -102,6 +54,7 @@ nav {
 
 
 @media only screen and (min-width: 768px) {
+
 }
 @media only screen and (min-width: 1024px) {
 }

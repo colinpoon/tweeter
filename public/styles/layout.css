@@ -158,7 +158,7 @@ display: flex;
 flex-direction:row;
 align-items: center;
 justify-content: space-evenly;
-font-family: "Calistoga";
+font-family: "bungee";
 font-size: 24px;
 color: #f97f58;
 border: 3px solid var(--color-shadow, #f97f58);
