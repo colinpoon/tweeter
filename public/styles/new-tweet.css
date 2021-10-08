@@ -3,7 +3,7 @@
   max-width: 90%;
   padding: 25px;
   margin-bottom: 50px;
-  margin-top: 50px;
+  margin-top: 200px;
 }
 
 textarea {
@@ -25,7 +25,7 @@ textarea {
 
 label {
   font-size: 24px;
-  font-family: "Source Sans Pro", "sans-serif";
+  font-family: "bungee", "sans-serif";
   font-weight: 900;
 }
 
@@ -59,7 +59,26 @@ output {
 }
 
 /* (https://codepen.io/meodai/pen/rNedxBa) */
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 1024px) {
+.new-tweet {
+    width: 90%;
+    padding: 25px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+  }
+  #tweet-form {
+    width: fit-content;
+  }
+  .new-tweet {
+    width: 100vw;
+    max-width: 90%;
+    padding: 25px;
+    margin-bottom: 50px;
+    margin-top: 75px;
+  }
 }
 @media only screen and (min-width: 1024px) {
 }

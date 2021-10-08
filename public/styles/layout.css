@@ -177,7 +177,17 @@ margin: 0.5rem;
   display: none;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
+  #tweets-container {
+    width: 100vw;
+    max-width: 90%;
+    
+  }
+  #media-tablet {
+    width: 100vw;
+    max-width: 90%;
+    display: flex;
+  }
 
 }
 

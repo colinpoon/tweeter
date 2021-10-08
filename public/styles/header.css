@@ -27,10 +27,20 @@ fef7f4
 f97f58
 */
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 1024px) {
+  .profile {
+    height: 400px;
+    width: 100vw;
+    max-width: 100%;
+    padding-top: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fef7f4;
+    background-image: url("https://www.transparenttextures.com/patterns/green-gobbler.png");
+  }
 }
 @media only screen and (min-width: 1024px) {
-  .profile {
-    float: left;
-  }
+
 }
