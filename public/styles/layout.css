@@ -172,14 +172,12 @@ margin: 0.5rem;
   bottom: 20px;
   cursor: pointer;
   padding: 10px 15px;
-  background: #00bfff;
-  font-weight: bold;
   color: #ffffff;
-  size: 20px;
+  margin-bottom: 30px;
   display: none;
 }
 
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
 }
 
 
@@ -193,4 +191,4 @@ margin: 0.5rem;
     justify-content: space-between;
     align-items: flex-start;
   }
-}
+} */

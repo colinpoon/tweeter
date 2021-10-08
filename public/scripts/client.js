@@ -90,12 +90,14 @@ $(document).ready(function () {
   };
   loadTweets();
 
+  /// SCROLL TO TOP
+  //GET REVIEWED
   $(function () {
     $(window).scroll(function () {
       if ($(this).scrollTop() - 200 > 0) {
         $('#to-top').stop().slideDown('fast');
       } else {
-        $('#to-top').stop().slideUp('fast'); 
+        $('#to-top').stop().slideUp('fast');
       }
       $("#to-top").on("click", function () {
         $("html, body").animate({
@@ -104,6 +106,7 @@ $(document).ready(function () {
       });
     });
   });
-
+  
+///DOCUMENT READY
 });
 
