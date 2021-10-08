@@ -2,7 +2,7 @@
   height: 400px;
 	width: 100vw;
 	max-width: 100%;
-  margin-top: 120px;
+  padding-top: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,7 +23,6 @@
 COLORS USED 
 e4f5e7
 204d36
-
 fef7f4
 f97f58
 */
