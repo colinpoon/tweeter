@@ -3,7 +3,7 @@
   max-width: 90%;
   padding: 25px;
   margin-bottom: 50px;
-  margin-top: 200px;
+  margin-top: 50px;
 }
 
 textarea {
@@ -59,7 +59,7 @@ output {
 }
 
 
-/* @media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
 .new-tweet {
     width: 90%;
     padding: 25px;
@@ -81,6 +81,9 @@ output {
   }
 }
 @media only screen and (min-width: 1024px) {
-} */
+  .new-tweet {
+    padding: unset;
+  }
+}
 
 /* (https://codepen.io/meodai/pen/rNedxBa) */
