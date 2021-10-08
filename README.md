@@ -6,8 +6,25 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Final Product
 
-!["URLS Page"](
+## Responsive Design
 
+## Desktop
+
+!["Landing"](https://github.com/colinpoon/tweeter/blob/master/public/images/README-IMGS/Screen%20Shot%202021-10-08%20at%204.01.40%20PM.png?raw=true)
+
+!["Error"](https://github.com/colinpoon/tweeter/blob/master/public/images/README-IMGS/Screen%20Shot%202021-10-08%20at%204.01.48%20PM.png?raw=true)
+
+!["Back To-Top"](https://raw.githubusercontent.com/colinpoon/tweeter/master/public/images/README-IMGS/Screen%20Shot%202021-10-08%20at%204.02.16%20PM.png)
+
+## Tablet & Mobile
+
+!["Landing"](https://github.com/colinpoon/tweeter/blob/master/public/images/README-IMGS/Screen%20Shot%202021-10-08%20at%204.02.44%20PM.png)
+
+!["Error"](https://github.com/colinpoon/tweeter/blob/master/public/images/README-IMGS/Screen%20Shot%202021-10-08%20at%204.02.56%20PM.png?raw=true)
+
+!["Back To-Top"](https://github.com/colinpoon/tweeter/blob/master/public/images/README-IMGS/Screen%20Shot%202021-10-08%20at%204.03.05%20PM.png?raw=true)
+
+  
 ## Getting Started
 
 1. Fork this repository, then clone your fork of this repository.
