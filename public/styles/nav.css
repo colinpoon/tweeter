@@ -99,3 +99,9 @@ nav {
   100% {-webkit-transform: translateY(0);} 
   50% {-webkit-transform: translateY(-10px);}
 }
+
+
+@media only screen and (min-width: 768px) {
+}
+@media only screen and (min-width: 1024px) {
+}
