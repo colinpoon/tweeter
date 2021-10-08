@@ -24,6 +24,7 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 .main-container {
+  margin-top: 120px;
   padding-left: 5%;
   padding-right: 5%;
   display: flex;
@@ -38,10 +39,17 @@ body {
   align-items: center;
   justify-content: center;
 }
+#two-column {
+  width: 100%;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
 
 #tweets-container {
-  width: 100vw;
-  max-width: 90%;
+  width: 100%;
 }
 
 /* attempted to implment the syntax var to see how it can be used */
@@ -175,6 +183,7 @@ margin: 0.5rem;
   color: #ffffff;
   margin-bottom: 30px;
   display: none;
+  z-index: 10;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -183,16 +192,17 @@ margin: 0.5rem;
     max-width: 90%;
   }
   #two-column {
-    width: 100vw;
-    max-width: 90%;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 
 @media only screen and (min-width: 1024px) {
+  
   .main-container {
-    width: 100%;
-    margin-top: 120px;
-    margin-right: 5%;
     display: flex;
     flex-direction:row;
     justify-content: space-between;
@@ -200,12 +210,5 @@ margin: 0.5rem;
   }
   *, *:before, *:after {
     box-sizing: unset;
-  }
-  #two-column {
-    max-width: 50%;
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-    justify-content: center;
   }
 }
