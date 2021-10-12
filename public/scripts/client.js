@@ -66,9 +66,15 @@ $(document).ready(function () {
       type: "POST",
       url: "/tweets/",
       data: tweetData,
+      /*
+      success: function (data) {
+          $('$count').val('')
+      */
     })
       .then(function (data) {
         loadTweets();
+        // id_objective_details_elem.text('');
+        // resetCharacterCount()
       })
       .then(function (data) {
         $text.val('');
