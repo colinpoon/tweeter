@@ -73,7 +73,7 @@ $(document).ready(function () {
     })
       .then(function (data) {
         loadTweets();
-        // id_objective_details_elem.text('');
+        // $count.text('');
         // resetCharacterCount()
       })
       .then(function (data) {
