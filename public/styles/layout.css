@@ -192,6 +192,7 @@ margin: 0.5rem;
   #tweets-container {
     width: 100vw;
     max-width: 90%;
+    margin-top: 25px;
   }
   #two-column {
     width: inherit;

@@ -60,25 +60,19 @@ $(document).ready(function () {
     if ($count > 140) {
       return $error.slideDown('swing');
     }
-
     const tweetData = $("#tweet-text").serialize();
     $.ajax({
       type: "POST",
       url: "/tweets/",
       data: tweetData,
-      /*
-      success: function (data) {
-          $('$count').val('')
-      */
     })
       .then(function (data) {
         loadTweets();
-        // $count.text('');
-        // resetCharacterCount()
       })
       .then(function (data) {
         $text.val('');
         $error.slideUp('swing');
+        $(".counter").text(140);
       })
   });
 
