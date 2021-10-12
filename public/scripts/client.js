@@ -89,7 +89,7 @@ $(document).ready(function () {
         renderTweets(data)
       })
   };
-  loadTweets();
+
 
   /// SCROLL TO TOP
   $(function () {
@@ -106,7 +106,25 @@ $(document).ready(function () {
       scrollTop: 0
     }, 200);
   });
-  
+
+  //NEW TWEET SLIDE OUT ANIMATION
+  $(".nav-med-vertical").click(function () {
+    $("#tweet-text").show().focus();
+    $(".new-tweet").slideToggle("slow", function () {
+      // Animation complete.
+    });
+  });
+
+  loadTweets();
+
   ///DOCUMENT READY
 });
-
+  //NEW TWEET SLIDE OUT ANIMATION ---> OPTION TWO
+  //   $(".nav-med-vertical").on("click", () => {
+  //   if ($(".new-tweet").first().is(":hidden")) {
+  //     $(".new-tweet").slideDown("medium");
+  //     $("#tweet-text").show().focus();
+  //   } else {
+  //     $(".new-tweet").slideUp("medium");
+  //   }
+  // });
