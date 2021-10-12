@@ -18,6 +18,12 @@
   font-weight: 500;
   font-variant-ligatures: historical-ligatures;
 }
+.userDisplay h2 {
+  display: flex;
+  margin-top: 20px;
+
+}
+
 
 /*
 COLORS USED 
@@ -30,7 +36,6 @@ f97f58
 @media only screen and (max-width: 1024px) {
   .profile {
     height: 400px;
-    width: 100vw;
     max-width: 100%;
     padding-top: 250px;
     display: flex;
