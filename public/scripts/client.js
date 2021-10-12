@@ -41,6 +41,7 @@ $(document).ready(function () {
 
   const renderTweets = function (tweets) {
     tweets.forEach(element => {
+      $(".tweets-container").empty(); // ---------------> check
       const tweet = createTweetElement(element);
       $('#tweets-container').prepend(tweet);
     });
@@ -105,7 +106,7 @@ $(document).ready(function () {
       scrollTop: 0
     }, 200);
   });
-
-///DOCUMENT READY
+  
+  ///DOCUMENT READY
 });
 

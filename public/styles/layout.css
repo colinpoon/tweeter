@@ -116,6 +116,8 @@ body {
   width: 100%;
   padding: 0.75em;
   margin-top: 0.5em;
+  line-break: anywhere;
+  
 }
 .tweet-post-content h2 {
   font-size: 21px;
